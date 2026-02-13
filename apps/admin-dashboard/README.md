@@ -3,7 +3,7 @@ Asante Trade provides a complete platform for field agents to sell financial ser
 ✨ Key Features
 For Administrators
 
-Agent Network Management - Onboard, approve, and monitor agents across regions
+Agent Network Management - Onboard, approve, and monitor agents across region
 Financial Overview - Track transaction volumes, revenue, and commission payouts
 Compliance Dashboard - KYC verification, AML monitoring, and regulatory reporting
 Product Management - Configure services, set pricing, and launch promotions
