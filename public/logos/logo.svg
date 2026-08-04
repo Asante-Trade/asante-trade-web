@@ -1,0 +1,30 @@
+<svg width="560" height="140" viewBox="0 0 560 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Asante Trade logo">
+  <defs>
+    <linearGradient id="at-gold-h" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2C766"/>
+      <stop offset="100%" stop-color="#C8901E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- icon mark -->
+  <g transform="translate(6,6)">
+    <rect width="128" height="128" rx="28" fill="#12141C"/>
+    <g stroke="url(#at-gold-h)" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M64 28 L30 96"/>
+      <path d="M64 28 L98 96"/>
+      <path d="M44 68 L84 68"/>
+    </g>
+    <circle cx="64" cy="28" r="8" fill="url(#at-gold-h)"/>
+    <circle cx="30" cy="96" r="8" fill="url(#at-gold-h)"/>
+    <circle cx="98" cy="96" r="8" fill="url(#at-gold-h)"/>
+    <circle cx="64" cy="68" r="5" fill="#2FD1C5"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="158" y="76" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#12141C">
+    Asante<tspan fill="#C8901E">Trade</tspan>
+  </text>
+  <text x="160" y="102" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" fill="#6B6F7B">
+    Financial inclusion, powered by Stellar
+  </text>
+</svg>
