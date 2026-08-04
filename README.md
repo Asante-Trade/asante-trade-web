@@ -1,96 +1,164 @@
-# asante-trade-web
- web dashboards for Asante Trade - Admin, Manager, and Trainer portals for financial inclusion agents across Africa. Built with React.js and Stellar blockchain
-About
+Asante Trade Web
 
-Asante Trade provides field agents with the tools to sell financial services — mobile wallets, remittances, savings, bill payments — to communities that lack access to traditional banking. By building on Stellar's fast, low-cost rails, we aim to make financial inclusion viable at scale across Africa.
+Modern web platform for managing agent-led digital financial services across Africa.
 
-This repository holds the web dashboards:
+Overview
 
-Portal	Audience	Status
-Admin dashboard	Head-office staff — agent network, compliance, product configuration	🚧 In development
-Manager dashboard	Regional/line managers — territory performance, team oversight	📋 Planned
-Trainer/Customer portal	Trainers and self-service customers	📋 Planned
+Asante Trade Web is the frontend application for the Asante Trade platform. It provides intuitive web dashboards for administrators, regional managers, trainers, and customers to manage agent networks, monitor operations, oversee compliance, and access digital financial services.
 
-The agent-facing mobile app and backend API live in separate repositories (see Roadmap).
+Built with Next.js, React, TypeScript, and Tailwind CSS, the platform delivers a fast, responsive, and scalable user experience. It integrates with the Asante Trade Backend API and is designed to support future Stellar blockchain and Soroban smart contract functionality for secure, low-cost financial transactions.
 
-Project status
+The goal of Asante Trade is to empower agent networks with modern digital tools that expand financial inclusion across underserved communities in Africa.
 
-This project is at an early, pre-MVP stage. The admin-dashboard app currently in this repo is a Next.js scaffold — the foundation the team is building the real admin experience on top of. If you're looking at the code expecting a finished product, you're early, and that's exactly where new contributors can have the most impact.
-
-Because of that, please open an issue or check existing ones before starting non-trivial work, so effort isn't duplicated while the architecture is still settling.
-
-Tech stack
-Framework: Next.js (App Router) on React 19
-Language: TypeScript
-Styling: Tailwind CSS
-Package manager: pnpm
-Linting: ESLint (eslint-config-next)
-Blockchain: Stellar / Soroban smart contracts (planned)
-Repository structure
+Features
+Admin Dashboard
+Agent network management
+User & role management
+Product configuration
+KYC/AML monitoring
+Transaction oversight
+Reporting & analytics
+System configuration
+Manager Dashboard (Planned)
+Territory management
+Team performance monitoring
+Sales analytics
+Agent supervision
+Regional reporting
+Trainer Portal (Planned)
+Training resources
+Agent onboarding
+Progress tracking
+Learning materials
+Customer Portal (Planned)
+Wallet management
+Transaction history
+Savings overview
+Bill payments
+Account settings
+Tech Stack
+Technology	Purpose
+Next.js (App Router)	React Framework
+React 19	UI Library
+TypeScript	Programming Language
+Tailwind CSS	Styling
+ESLint	Code Quality
+pnpm	Package Manager
+Stellar SDK	Blockchain Integration (planned)
+Soroban	Smart Contract Integration (planned)
+Project Structure
 asante-trade-web/
 ├── apps/
-│   └── admin-dashboard/     # Head office management portal (Next.js)
-├── assets/                  # Logo and shared brand assets
+│   └── admin-dashboard/
+│       ├── app/
+│       ├── components/
+│       ├── lib/
+│       ├── public/
+│       └── styles/
+├── assets/
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── SECURITY.md
-└── LICENSE
+├── LICENSE
+└── README.md
 
-As the project grows, this repo is expected to become a pnpm-workspace monorepo with additional apps (manager-dashboard, customer-portal) and shared packages/ for UI components, Stellar utilities, and types — see Roadmap. The structure above reflects what exists today, not the target architecture; check open issues for where things are headed.
+As the project grows, this repository will evolve into a pnpm workspace monorepo containing:
 
-Getting started
+apps/
+├── admin-dashboard/
+├── manager-dashboard/
+├── trainer-portal/
+└── customer-portal/
+
+packages/
+├── ui/
+├── utils/
+├── types/
+└── stellar/
+Getting Started
 Prerequisites
 Node.js 20+
 pnpm 8+
-bash
+
+Install pnpm if you don't already have it:
+
 npm install -g pnpm
-Install and run
-bash
-# Clone the repository
+Installation
+
+Clone the repository:
+
 git clone https://github.com/Asante-Trade/asante-trade-web.git
+
+Navigate to the admin dashboard:
+
 cd asante-trade-web/apps/admin-dashboard
 
-# Install dependencies
+Install dependencies:
+
 pnpm install
 
-# Start the dev server
+Start the development server:
+
 pnpm dev
 
-The admin dashboard will be available at http://localhost:3000.
+Open your browser at:
 
-Available scripts
+http://localhost:3000
+Available Scripts
+pnpm dev      # Start development server
 
-Run these from apps/admin-dashboard:
-
-bash
-pnpm dev      # Start the development server
 pnpm build    # Production build
-pnpm start    # Serve the production build
+
+pnpm start    # Start production server
+
 pnpm lint     # Run ESLint
 Roadmap
- Repository scaffolding
- Admin dashboard: agent network management
- Admin dashboard: compliance (KYC/AML) view
- Manager dashboard
- Customer/trainer portal
- Shared packages/ui, packages/utils, packages/types
- Stellar/Soroban integration (wallets, savings contracts)
- CI (lint, type-check, test) via GitHub Actions
-
-Have thoughts on priority? Open a discussion or issue — roadmap input from contributors is welcome.
-
+Admin Dashboard
+Agent Network Management
+Compliance (KYC/AML)
+Transaction Monitoring
+Reporting & Analytics
+Manager Dashboard
+Trainer Portal
+Customer Portal
+Shared UI Components
+Shared Utility Packages
+Shared Types
+Stellar Integration
+Soroban Smart Contracts
+GitHub Actions CI/CD
+Automated Testing
 Contributing
 
-Contributions of all sizes are welcome — code, documentation, design, or triage. Start with CONTRIBUTING.md for environment setup, coding conventions, and the PR process, and please review our Code of Conduct.
+Contributions of all sizes are welcome.
 
-Good first steps:
+Whether you're fixing bugs, improving documentation, designing UI, or building new features, we'd love your help.
 
-Look through open issues, especially any labeled good first issue.
-Comment on the issue you'd like to take before starting, to avoid duplicate work.
-Fork, branch, and open a PR following the guide in CONTRIBUTING.md.
-Community & support
-Bugs & feature requests: GitHub Issues
-Security issues: please see SECURITY.md — do not open a public issue
+Before contributing:
+
+Browse open issues.
+Comment on the issue you'd like to work on.
+Fork the repository.
+Create a feature branch.
+Submit a Pull Request.
+
+Please read CONTRIBUTING.md before getting started.
+
+Related Repositories
+Repository	Description
+asante-trade-backend	Backend API powering authentication, transactions, wallets, and business logic
+asante-trade-mobile (Planned)	Mobile application for field agents
+asante-trade-contracts (Planned)	Soroban smart contracts for blockchain-powered financial services
+Security
+
+If you discover a security vulnerability, please report it privately as described in SECURITY.md.
+
 License
 
 This project is licensed under the MIT License.
+
+See the LICENSE file for more information.
+
+Vision
+
+Asante Trade is building the digital infrastructure that enables agent networks to deliver secure, affordable, and accessible financial services to underserved communities across Africa. By combining modern web technologies with the Stellar blockchain, the platform aims to make financial inclusion scalable, transparent, and efficient.
